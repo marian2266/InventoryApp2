@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <!-- Product Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            style="@style/ProductDetailsStyle"
+            android:text="@string/product_details" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/paddingLeft_linear_layout_input_field">
+
+            <!-- Product Name field -->
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_product_name"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_author_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_author_name"
+                android:inputType="textCapWords" />
+
+            <!-- Image view for increase quantity -->
+            <ImageView
+                android:id="@+id/image_view_increase_quantity"
+                android:layout_width="@dimen/width_imageView_update_quantity"
+                android:layout_height="@dimen/height_imageView_update_quantity"
+                android:layout_marginTop="@dimen/marginTop_imageView_update_quantity"
+                android:src="@drawable/ic_increase_quantity" />
+
+            <!-- Quantity field -->
+            <EditText
+                android:id="@+id/edit_quantity"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_quantity"
+                android:inputType="number" />
+
+            <!-- Image view for decrease quantity -->
+            <ImageView
+                android:id="@+id/image_view_decrease_quantity"
+                android:layout_width="@dimen/width_imageView_update_quantity"
+                android:layout_height="@dimen/height_imageView_update_quantity"
+                android:layout_marginTop="@dimen/marginTop_imageView_update_quantity"
+                android:src="@drawable/ic_decrease_quantity" />
+
+            <!-- Price field -->
+            <EditText
+                android:id="@+id/edit_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_price"
+                android:inputType="numberDecimal" />
+
+            <!-- Supplier Name field -->
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords" />
+
+            <!-- Supplier Phone Number field -->
+            <EditText
+                android:id="@+id/edit_supplier_phone"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_supplier_phone_number"
+                android:inputType="number" />
+
+            <!-- Button for call supplier -->
+            <Button
+                android:id="@+id/button_call_supplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:padding="@dimen/padding_button_call_supplier"
+                android:text="@string/call_supplier"
+                android:textColor="@color/textColor_button" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

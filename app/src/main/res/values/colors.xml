@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7b1fa2</color>
+    <color name="colorPrimaryDark">#4a0072</color>
+    <color name="colorAccent">#ae52d4</color>
+    <color name="textColor_button">#FFFFFF</color>
+    <color name="textColor_product_name_list_item">#000000</color>
+
+    <!-- Primary color for the editor -->
+    <color name="editorColorPrimary">#ae52d4</color>
+
+    <!-- Primary dark color for the editor -->
+    <color name="editorColorPrimaryDark">#ae52d4</color>
+</resources>
